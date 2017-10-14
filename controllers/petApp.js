@@ -21,6 +21,18 @@ router.get('/new', (req, res) => {
 	res.render('new', {})
 }); // end of route
 
+router.get('/:id', (req, res) => {
+	pet.findById(req.params.id,(err, pet) => {
+		if(err){
+			res.send('there was an error with database')
+		} else {
+			console.log(pet);
+			res.render('show', {pet: pet});
+
+		}// end of if else
+	}) // end of mongo query
+});
+
 router.get('/:id/edit', (req, res) => {
 	pet.findById(req.params.id,(err, pet) => {
 		if(err){

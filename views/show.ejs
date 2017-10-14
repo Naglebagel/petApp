@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../views/partials/head.ejs %>
+</head>
+<body>
+
+<ul>
+	<h1>Pets</h1>
+		
+	<form action="/pet/<%= pet._id %>?_method=DELETE" method="POST">
+		<li><%= pet.name %></li>
+		<li><%= pet.type %></li>
+		<li><%= pet.color %></li>
+		<li><%= pet.age %></li>
+		<a href="/pet/<%= pet._id %>/edit" id="petEdit">Edit</a>
+		<button type="submit">Delete</button>
+	</form>	
+		<h3><a href="/pet">Back</a></h3>
+</ul>
+
+</body>
+</html>

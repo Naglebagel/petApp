@@ -9,13 +9,14 @@
 	<div class="btn-container">
 		<% pet.forEach((item, i) => { %>
 	<form action="/pet/<%= item.id %>?_method=DELETE" method="POST">
-		<li><%= pet[i].name %></li>
+		<li><a href="/pet/<%= item.id%>"><%= pet[i].name %></a></li>
 		<li><%= pet[i].type %></li>
 		<li><%= pet[i].color %></li>
 		<li><%= pet[i].age %></li>
-		<button href="/pet/<%= item.id %>/edit" id="petEdit">Edit</button>
+		<a href="/pet/<%= item.id %>/edit" id="petEdit">Edit</a>
 		<button type="submit">Delete</button>
 	</form>	
+
 		<% }) %>
 		</div>
 		<h3><a href="/pet/new" id="addPet">Add a New Pet</a></h3>

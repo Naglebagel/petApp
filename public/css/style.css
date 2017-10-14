@@ -36,6 +36,12 @@ button:hover {
   display: flex;
   justify-content: center;
 }
+#petEdit {
+  color: purple;
+}
+#petEdit:hover {
+  color: blanchedalmond;
+}
 #addPet {
   color: purple;
 }
