@@ -1,0 +1,44 @@
+body {
+  background-color: steelblue;
+  text-align: center;
+  color: maroon;
+  font-family: 'Skranji', cursive;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: maroon;
+}
+a:hover {
+  color: blanchedalmond;
+}
+form {
+  margin: 2px;
+  padding: 2px;
+}
+button {
+  background-color: teal;
+  color: blanchedalmond;
+  box-shadow: 1px 1px 1px  1px black;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: maroon;
+}
+.btn-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#addPet {
+  color: purple;
+}
+#addPet:hover {
+  color: blanchedalmond;
+}
