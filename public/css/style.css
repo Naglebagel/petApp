@@ -1,8 +1,8 @@
 body {
-  background-color: steelblue;
   text-align: center;
   color: maroon;
   font-family: 'Skranji', cursive;
+  background-image: url("../images/background.png");
 }
 ul {
   list-style-type: none;
