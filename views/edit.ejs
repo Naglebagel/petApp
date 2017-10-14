@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../views/partials/head.ejs %>
+</head>
+<body>
+	<h1>Edit Pet</h1>
+	<form action="/pet/<%= pet._id %>/edit?_method=PUT" method="POST">
+		Name: <input type="text" name="name" value="<%= pet.name%>">
+		Type: <input type="text" name="type" value="<%= pet.type%>">
+		Color: <input type="text" name="color" value="<%= pet.color%>">
+		Age: <input type="text" name="age" value="<%= pet.age%>">
+		<button type="submit">Update</button>
+	</form>
+	<h3><a href="/pet">Back</a></h3>
+</body>
+</html>

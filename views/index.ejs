@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../views/partials/head.ejs %>
+</head>
+<body>
+<ul>
+	<h4>Pets</h4>
+		<% pet.forEach((item, i) => { %>
+	<form action="/pet/<%= item.id %>?_method=DELETE" method="POST">
+		<li><%= pet[i].name %></li>
+		<li><%= pet[i].type %></li>
+		<li><%= pet[i].color %></li>
+		<li><%= pet[i].age %></li>
+		<button type="submit">Delete</button>
+	</form>	
+		<a href="/pet/<%= item.id %>/edit">Edit</a>
+		<% }) %>
+		<h5><a href="/pet/new">Add a New Pet</a></h5>
+</ul>
+
+
+
+
+</body>
+</html>
